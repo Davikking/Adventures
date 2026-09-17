@@ -7,8 +7,8 @@ const noteLines = [
   "Want to go on a third date with me? Head north and pick a path."
 ];
 const choices = {
-  birds:  { title: "Bird watching!", text: "Binoculars, a quiet trail, and good company. It's a date.", sms: "Bird watching! When are you free?" },
-  apples: { title: "Apple picking!", text: "An orchard, a full basket, and maybe some cider after. It's a date.", sms: "Apple picking! When are you free?" }
+  birds:  { title: "Bird watching!", text: "Binoculars, a quiet trail, and good company. It's a date.", sms: "Bird watching! 11:30 am Saturday September 26th" },
+  apples: { title: "Apple picking!", text: "An orchard, a full basket, and maybe some cider after. It's a date.", sms: "Apple picking! 11:30 am Saturday September 26th" }
 };
 // ==========================================
 
