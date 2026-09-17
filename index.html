@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Emily's Autumn Hunt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="console">
+  <div class="shell">
+    <div class="bezel">
+      <div class="screen" id="screen">
+        <canvas id="game" width="160" height="144" aria-label="Game screen"></canvas>
+        <div class="dialog" id="dialog" hidden aria-live="polite">
+          <span id="dialogText"></span>
+          <span class="arrow" id="dialogArrow" hidden></span>
+        </div>
+        <div class="title" id="title">
+          <h1>Emily's<br>Autumn Hunt</h1>
+          <canvas id="titleSprite" class="title-sprite" width="16" height="20" aria-hidden="true"></canvas>
+          <div class="sub">A little adventure from Christoph</div>
+          <div class="press">Press A to start</div>
+          <div class="tiny">D-pad or arrow keys to walk</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="dpad" id="dpad" aria-label="Direction pad">
+        <span class="arm up"><i></i></span>
+        <span class="arm down"><i></i></span>
+        <span class="arm left"><i></i></span>
+        <span class="arm right"><i></i></span>
+      </div>
+      <div class="ab">
+        <button class="round-btn btn-b" id="buttonB" type="button" aria-label="B button: back or open bag">B</button>
+        <button class="round-btn btn-a" id="buttonA" type="button" aria-label="A button: talk or check">A</button>
+        <span class="btn-label label-a">Talk</span>
+        <span class="btn-label label-b">Bag</span>
+      </div>
+    </div>
+    <div class="meta">
+      <button class="mini-btn" id="soundButton" type="button">Sound: on</button>
+    </div>
+  </div>
+</main>
+
+<div class="overlay" id="noteOverlay" hidden>
+  <div class="note" role="dialog" aria-label="Note from the chest">
+    <p id="noteBody"></p>
+    <p class="sign" id="noteSign"></p>
+    <p class="hintline">Press A to fold the note</p>
+  </div>
+</div>
+
+<div class="overlay" id="endOverlay" hidden>
+  <div class="card" role="dialog" aria-label="Your pick">
+    <h2 id="endTitle"></h2>
+    <p id="endText"></p>
+    <a class="pixel-btn" id="textLink" href="#" target="_top">Text Christoph your pick</a>
+    <p class="small">If that button doesn't open your messages, screenshot this and send it to him.</p>
+    <button class="text-btn" id="rechooseButton" type="button">Wait, let me pick again</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
