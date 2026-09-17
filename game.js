@@ -3,7 +3,7 @@ const herName = "Emily";
 const yourName = "Christoph";
 const noteLines = [
   `Hey ${herName}, you found everything!`,
-  "I'm really loving getting to know you. You're beautiful, funny and I have really enjoyed every moment so far.",
+  "I'm really loving getting to know you. You're beautiful, funny, and a joy to talk to. I have really enjoyed every moment so far.",
   "Want to go on a third date with me? Head north and pick a path."
 ];
 const choices = {
